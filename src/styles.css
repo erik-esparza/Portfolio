@@ -1,0 +1,256 @@
+@import url("https://use.typekit.net/vjl8czo.css");
+
+/* *, *::after, *::before {
+    outline: red 0.3px dotted;
+} */
+
+body {
+    background-color: black;
+    margin: 0%;
+}
+
+/* mobile menu link */
+
+#mainThreeJs {
+    display: flex;
+    position: absolute;
+    flex-flow: column wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    outline: violet 3px dotted !important;
+}
+
+.container {
+    display: flex; 
+    flex-flow: column wrap;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1px;
+
+    /* cutout */
+}
+
+/* T E X T --------------------------------------------*/
+                                                    
+.textContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 5%;
+    padding: 2%;
+    height: min-content;
+    width: min-content;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.textGradient {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5% 0%;
+    background-color: black;
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #a59fe2, #aaa2e3, #c19edb, #d59ad0, #e498c2, #ee98b3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    object-fit: cover;
+    filter: invert(0%) grayscale(25%) brightness(100%);
+}
+
+.inputCursor {
+    display: inline-block;
+    position: relative;
+    width: 2px;
+    height: 1em;
+    top: -5%;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+    }
+
+
+.text {                                            
+    display: flex;                                
+    width: 100%;                                  
+    justify-content: center;                    
+    align-items: center;                       
+    padding: 1%;                              
+    margin: 2% 0%;                           
+
+    /* font */                             
+    font-family: orbitron, sans-serif;   
+    font-weight: 510;                   
+    font-style: normal;                
+    font-size: 2.8em;                   
+    letter-spacing: .45rem;
+    transition: letter-spacing 700ms ease-in; 
+}                     
+
+.textContainer:hover {
+    letter-spacing: .50rem;
+}
+
+.subtext {
+    display: flex;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin: 2% 0%;
+
+/* font */
+    font-family: dico-code-one, mono;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*--------------------------------------------*/
+
+.logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(50px + 35vmin);
+    height: calc(50px + 35vmin);
+    background: url(./assets/images/SoftGradient.jpg);
+    background-size: 180%;
+    filter: saturate(50%);
+    transition: filter 1000ms, transform 1000ms, box-shadow 2000ms ease-in-out;
+    visibility: hidden;
+}
+
+.square:hover {
+    filter: brightness(105%) saturate(60%);
+    box-shadow: 0px 0px 15px 0.03rem rgba(216, 112, 147, 0.75);
+    transform: scale(1.05);
+}
+
+.dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    /* font */
+    font-family: dico-code-one, mono;   
+    font-weight: 510;                   
+    font-style: normal;                
+    font-size: 6em;              
+    letter-spacing: -0.45rem;
+
+    /* style */
+    color: black; 
+    margin-bottom: 0.25em;
+}
+
+.slash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    /* font */
+    font-family: dico-code-one, mono;   
+    font-weight: 510;                   
+    font-style: normal;                
+    font-size: 6em;              
+    letter-spacing: -0.45rem;
+
+    /* style */
+    color: black; 
+    margin-bottom: 0.25em;
+
+    animation-iteration-count: 1;
+}
+
+.animate__animated.animate__flash {
+    --animate-duration: 4s;
+    }
+
+.bottomNavCont {
+    width: 100%;
+    position: relative;
+}
+
+.bottomNav {
+    display: flex;
+    position: relative;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottomBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(#00000000, #000000bf 25%, #000000);
+    opacity: 90%;
+    z-index: 0;
+}
+
+.bottomNav a {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 2%;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(191, 154, 250);
+}
+
+
+.ico {
+    height: calc(2em + 0.5vmin);;
+    width: calc(2em + 0.5vmin);;
+    filter: invert(100%);
+    margin-bottom: 0.5em;
+}
+
+.linkNav {
+    font-family: dico-code-one, mono;   
+    font-weight: 400;                   
+    font-style: normal;                
+    font-size: calc(1em + 0.5vmin);
+    transition: background-color 700ms ease-in-out;
+    z-index: 1;
+}
+
+.linkNav:hover {
+    background-color: rgba(191, 154, 250, 0.25);
+}
+
+canvas {
+    display: flex !important;
+    position: absolute;
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    z-index: -1;
+}
+
